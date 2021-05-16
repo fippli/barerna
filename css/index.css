@@ -5,6 +5,11 @@ body {
   
   /* Variables */
   --content-padding: 1rem;
+  --blue: #464D77;
+  --yellow: #E1B12C;
+  --green: #386641;
+  --white: #F4EDED;
+  --red: #ED6A5A;
 }
 
 *, *::after, *::before {
@@ -109,4 +114,8 @@ main {
   color: #e1b12c;
   font-size: 2rem;
   font-weight: 900;
+}
+
+.location-link {
+  color: var(--blue)
 }
