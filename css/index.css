@@ -7,6 +7,10 @@ body {
   --content-padding: 1rem;
 }
 
+*, *::after, *::before {
+  box-sizing: border-box;
+}
+
 /* Header */
 header {
   background-image: url('../resources/pexels-pixabay-274192.jpg');
@@ -24,7 +28,7 @@ header nav {
   font-weight: 100;
   display: flex;
   justify-content: center;
-  margin: 1rem 0;
+  margin: 2rem 0;
 }
 
 header nav a {
@@ -33,7 +37,7 @@ header nav a {
   text-decoration: none;
   font-size: 1.2rem;
   text-transform: uppercase;
-  margin: 0.5rem;
+  margin: 0 0.5rem;
 }
 
 header nav a:hover {
@@ -81,4 +85,28 @@ main {
   width: 40%;
   border-bottom: 2px solid #ffffff;
   margin-bottom: 3px;
+}
+
+/* List */
+.list {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.list-item {
+  border-bottom: 10px dotted #e1b12c;
+  padding: 1rem;
+}
+
+.list-item:last-child {
+  border-bottom: none;
+}
+
+.bar_title {
+  font-family: 'Roboto', sans-serif;
+  text-align: center;
+  color: #e1b12c;
+  font-size: 2rem;
+  font-weight: 900;
 }
