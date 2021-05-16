@@ -2,11 +2,12 @@ body {
   margin: 0;
   padding: 0;
   font-family: 'Roboto', sans-serif;
-
+  
   /* Variables */
   --content-padding: 1rem;
 }
 
+/* Header */
 header {
   background-image: url('../resources/pexels-pixabay-274192.jpg');
   background-size: cover;
@@ -35,19 +36,8 @@ header nav a {
   margin: 0.5rem;
 }
 
-main {
-  padding: var(--content-padding);
-}
-
-
-.header-menu-wrapper nav a:hover {
+header nav a:hover {
   border-bottom: 1px solid #ffffff;
-}
-
-.header-menu-wrapper {
-  width: 100%;
-  display: flex;
-  align-items: center;
 }
 
 .logo {
@@ -67,6 +57,13 @@ main {
   text-shadow: 3px 3px #ffffff;
 }
 
+/* Main */
+main {
+  padding: var(--content-padding);
+}
+
+
+
 .text-wrapper {
   display: flex;
   flex-direction: column;
@@ -74,14 +71,14 @@ main {
 }
 
 .long-line {
-height: 2px;
-width: 50%;
-border-bottom: 2px solid #ffffff;
-margin-bottom: 3px;
+  height: 2px;
+  width: 50%;
+  border-bottom: 2px solid #ffffff;
+  margin-bottom: 3px;
 }
 .short-line {
-height: 2px;
-width: 40%;
-border-bottom: 2px solid #ffffff;
-margin-bottom: 3px;
+  height: 2px;
+  width: 40%;
+  border-bottom: 2px solid #ffffff;
+  margin-bottom: 3px;
 }
