@@ -12,16 +12,7 @@
 </head>
 <body>
   <header>
-    <div class="header-menu-wrapper">
-      <div>
         <img alt="" class="logo" src="./barerna.png" />
-      </div>
-      <nav>
-        <a href="#beer">Öl</a>
-        <a href="#wine">Vin</a>
-        <a href="#drinks">Drinkar</a>
-      </nav>
-    </div>
     <div class="text-wrapper">
       <p class="header-text">
         Du behöver inte leta längre!<br/>
@@ -30,21 +21,20 @@
       <div class="long-line"></div>
       <div class="short-line"></div>
     </div>
+    <nav>
+      <a href="#beer">Öl</a>
+      <a href="#wine">Vin</a>
+      <a href="#drinks">Drinkar</a>
+    </nav>
   </header>
   <main>
     <div>
       <h2 id="beer">Öl</h2>
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+      <a href="https://stigbergetsfot.se/">Stigbergets Fot</a>
       <h2 id="wine">Vin</h2>
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+      <a href="https://www.dryckvinbar.se/">Dryck</a>
       <h2 id="drinks">Drinkar</h2>
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+      <a href="https://hommage.se/">Hommage</a>
     </div>
   </main>
   <footer>
@@ -59,7 +49,7 @@
     font-family: 'Roboto', sans-serif;
 
     /* Variables */
-    --content-padding: 128px;
+    --content-padding: 1rem;
   }
 
   header {
@@ -67,31 +57,32 @@
     background-size: cover;
     background-position-y: center;
     padding: var(--content-padding);
-    min-height: 50vh;
     color: #ffffff;
     display: flex;
     flex-direction: column;
+    align-items: center;
+  }
+
+  header nav {
+    color: #ffffff;
+    font-weight: 100;
+    display: flex;
+    justify-content: center;
+  }
+
+  header nav a {
+    color: #ffffff;
+    font-weight: 300;
+    text-decoration: none;
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    margin: 0.5rem;
   }
 
   main {
     padding: var(--content-padding);
   }
 
-  .header-menu-wrapper nav {
-    color: #ffffff;
-    font-weight: 100;
-    margin-left: auto;
-
-  }
-
-  .header-menu-wrapper nav a {
-    color: #ffffff;
-    font-weight: 300;
-    text-decoration: none;
-    font-size: 1.2rem;
-    text-transform: uppercase;
-    margin-left: 1rem;
-  }
 
   .header-menu-wrapper nav a:hover {
     border-bottom: 1px solid #ffffff;
