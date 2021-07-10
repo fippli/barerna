@@ -40,26 +40,6 @@ header {
   align-items: center;
 }
 
-header nav {
-  color: #ffffff;
-  font-weight: 100;
-  display: flex;
-  justify-content: center;
-  margin: 2rem 0;
-}
-
-header nav a {
-  color: #ffffff;
-  font-weight: 300;
-  text-decoration: none;
-  font-size: 1.2rem;
-  text-transform: uppercase;
-  margin: 0 0.5rem;
-}
-
-header nav a:hover {
-  border-bottom: 1px solid #ffffff;
-}
 
 .logo {
   width: 94px;
@@ -84,8 +64,6 @@ main {
   background-color: #000000;
 }
 
-
-
 .text-wrapper {
   display: flex;
   flex-direction: column;
@@ -104,42 +82,13 @@ main {
   border-bottom: 5px solid #ffffff;
 }
 
-/* List */
-.list {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-}
-
-.list-item {
-  padding: 1rem;
-  border-radius: 2px;
-  margin-bottom: 10px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-.list-item:last-child {
-  border-bottom: none;
-}
-
-.bar_title {
+.bar-title {
   font-family: 'Roboto', sans-serif;
   font-size: 2rem;
   font-weight: 900;
 }
 
-.bar_location_copy {
-  color: var(--white);
-  background: var(--blue);
-  padding: .4rem;
-  text-decoration: none;
-  box-shadow: 3px 3px 0px 0px var(--yellow);
-  margin: 1rem 0;
-}
-
-.bar_location_address_copy {
+.bar-address {
   text-decoration: none;
   color: var(--white);
   font-weight: 900;
@@ -149,7 +98,7 @@ main {
   background-color: var(--blue);
 }
 
-.bar_description {
+.bar-description {
   padding: 1rem 0;
 }
 
@@ -163,10 +112,46 @@ main {
   margin-bottom: 40px;
 }
 
-.bar_url {
+.bar-website {
   color: var(--red);
   font-weight: 700;
   letter-spacing: 1px;
   border-bottom: 2px solid var(--red);
   text-decoration: none;
+}
+
+.bar-feed {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.bar-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.tag-list-wrapper {
+  margin: 20px 0;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.tag {
+  border-radius: 100px;
+  background-color: var(--yellow);
+  padding: 5px 20px;
+  color: var(--white);
+  border-bottom: 3px solid rgba(0,0,0,0.1);
+  margin-right: 10px;
+  margin-bottom: 5px;
+}
+
+.map-wrapper {
+  width: 100%;
+}
+
+.map {
+  width: 100%;
 }
