@@ -27,6 +27,38 @@
     website: "https://tjoget.com/baren", 
     tags: ["vin"],
   },
+  {
+    name: "Vinverket", 
+    mapUrl: "", 
+    website: "https://vinverket.se", 
+    tags: ["vin"],
+  },
+  {
+    name: "Vikingagatan 5", 
+    mapUrl: "", 
+    website: "http://www.facebook.com/Vikingagatan5", 
+    tags: ["vin"],
+  },
+  {
+    name: "Amfora Vinbaren", 
+    mapUrl: "", 
+    website: "https://vinbaren111.se", 
+    tags: ["vin"],
+  },
+  {
+    name: "Cork Vinbar", 
+    mapUrl: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2035.5096588603653!2d18.06653655114169!3d59.3244444815671!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x465f77abf900b10f%3A0x2d6c9cff3fb20d62!2sCork%20Vinbar!5e0!3m2!1sen!2sse!4v1626251307461!5m2!1sen!2sse",
+    website: "https://www.corkvinbar.se", 
+    tags: ["vin"],
+  },
+  {
+    name: "Dryck vinbar", 
+    mapUrl: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2035.929350419959!2d18.0613440511413!3d59.31743668156461!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x465f77e5ba2d66bd%3A0x97a90f4d48f1c8b7!2sDryck%20Wine%20Bar!5e0!3m2!1sen!2sse!4v1626251255787!5m2!1sen!2sse", 
+    website: "https://www.dryckvinbar.se", 
+    tags: ["vin"],
+  },
+
+
 
 ])
 
